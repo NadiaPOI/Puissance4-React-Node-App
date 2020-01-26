@@ -1,0 +1,41 @@
+{
+  "name": "puissance4-react-node-app",
+  "version": "1.0.0",
+  "description": "Backend of Puissance 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "start": "node index.js",
+    "start:watch": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NadiaPOI/Puissance4-React-Node-App.git"
+  },
+  "author": "Nadia Poi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NadiaPOI/Puissance4-React-Node-App/issues"
+  },
+  "homepage": "https://github.com/NadiaPOI/Puissance4-React-Node-App#readme",
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "jest": "^25.1.0",
+    "jwt-simple": "^0.5.6",
+    "mongo-sanitize": "^1.0.1",
+    "mongoose": "^5.8.9",
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2"
+  }
+}
