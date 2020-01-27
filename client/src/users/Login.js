@@ -33,7 +33,7 @@ export default function Login({ history, setUser }) {
             setAuthToken(data.token);
             setUser(data.username);
 
-            if (email === "x@gmail.com") {
+            if (email === process.env.ADMIN || "nadiap@gmail.com") {
               setAuthAdmin(true);
             }
 
