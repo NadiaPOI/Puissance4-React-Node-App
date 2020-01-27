@@ -1,9 +1,14 @@
 const bcrypt = require("bcryptjs");
 const sanitize = require("mongo-sanitize");
+const path = require('path')
 
 const User = require("./user");
 
 exports.init = app => {
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+  });
+
   app.get("/users", async (req, res) => {
     const users = await User.find();
     return res.status(200).send(users);
