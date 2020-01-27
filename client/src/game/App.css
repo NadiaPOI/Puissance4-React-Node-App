@@ -1,0 +1,108 @@
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #eae8e8;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.button {
+  width: 150px;
+  margin: 50px auto;
+  padding: 10px;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 2px 2px black;
+  text-align: center;
+  color: black;
+  border-color: cadetblue;
+  background-color: cadetblue;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  width: 290px;
+  margin: auto;
+}
+
+.row,
+.col {
+  width: 250px;
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+input[type="submit"] {
+  background-color: cadetblue;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px auto;
+  border-color: cadetblue;
+  text-align: center;
+  display: block;
+}
+
+.gameboard {
+  margin: 0 auto;
+  border-spacing: 0;
+}
+
+tr {
+  padding: 0;
+  cursor: pointer;
+}
+
+td {
+  border: 1px solid #002ae0;
+  background-color: #002ae0;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+.displayWinner {
+  border: 2px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 1px grey;
+  width: 36%;
+  margin: auto;
+  background-color: white;
+  position: absolute;
+  top: 35%;
+  right: 32%;
+}
+
+.displayWinner p {
+  text-align: center;
+  color: #002ae0;
+  font-weight: bold;
+  font-size: large;
+}
+
+.restart {
+  width: 120px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 1px 1px black;
+  padding: 10px;
+  color: #002ae0;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
