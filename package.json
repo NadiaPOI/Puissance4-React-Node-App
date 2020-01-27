@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/NadiaPOI/Puissance4-React-Node-App/issues"
   },
-  "homepage": "https://github.com/NadiaPOI/Puissance4-React-Node-App#readme",
+  "homepage": "https://puissance-4-react-node-app.herokuapp.com/",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
