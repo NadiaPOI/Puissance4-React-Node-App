@@ -1,12 +1,14 @@
 const mongoose = require("mongoose");
+const dotenv = require('dotenv')
 
 const app = require("./server");
+dotenv.config()
 
 // Connect to db
 //Ici la base de données se nomme « users », si elle n'existe pas elle sera créée automatiquement si une insertion est faite.
 mongoose
   .set("useCreateIndex", true)
-  .connect("mongodb://localhost:27017/users", {
+  .connect(process.env.MONGODB_URI ||"mongodb://localhost:27017/users", {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
