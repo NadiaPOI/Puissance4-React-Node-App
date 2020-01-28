@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
 const dotenv = require('dotenv')
 
-const app = require("./server");
 dotenv.config()
+
+const app = require("./server");
 
 // Connect to db
 //Ici la base de données se nomme « users », si elle n'existe pas elle sera créée automatiquement si une insertion est faite.
