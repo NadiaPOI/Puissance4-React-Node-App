@@ -2,7 +2,7 @@ const bcrypt = require("bcryptjs");
 const sanitize = require("mongo-sanitize");
 const path = require('path')
 
-const User = require("./user");
+const User = require("./User");
 
 exports.init = app => {
   app.get("*", (req, res) => {
