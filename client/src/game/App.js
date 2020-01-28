@@ -16,7 +16,7 @@ import { AuthContext } from "../context/auth";
 
 function App(props) {
   const [authToken, setAuthToken] = useState();
-  const [authAdmin, setAuthAdmin] = useState(false);
+  const [authAdmin, setAuthAdmin] = useState();
   const [username, setUsername] = useState();
 
   const setUserToken = data => setAuthToken(data);

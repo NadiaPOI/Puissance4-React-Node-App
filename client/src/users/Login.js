@@ -32,8 +32,8 @@ export default function Login({ history, setUser }) {
             setMessage(data.text);
             setAuthToken(data.token);
             setUser(data.username);
-
-            if (email === process.env.ADMIN) {
+            
+            if (email === process.env.REACT_APP_ADMIN) {
               setAuthAdmin(true);
             }
 
