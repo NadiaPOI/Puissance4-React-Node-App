@@ -15,7 +15,6 @@ app.use(urlencodedParser);
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "client", "build")))
-
 app.use(
   session({
     name: "tokendId",
