@@ -9,6 +9,7 @@ export default function Login({ history, setUser }) {
 
   const { setAuthToken } = useAuth();
   const { setAuthAdmin } = useAuth();
+  const admin = process.env.REACT_APP_ADMIN || "nadiap@gmail.com"
 
   function handleChangeEmail(e) {
     setEmail(e.target.value);
@@ -33,7 +34,7 @@ export default function Login({ history, setUser }) {
             setAuthToken(data.token);
             setUser(data.username);
             
-            if (email === process.env.REACT_APP_ADMIN) {
+            if (email === admin) {
               setAuthAdmin(true);
             }
 
