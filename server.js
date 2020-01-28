@@ -5,7 +5,6 @@ const cookieParser = require("cookie-parser");
 const path = require('path')
 
 const router = require("./router");
-const config = require("./config/config");
 
 const app = express();
 
@@ -20,7 +19,7 @@ app.use(express.static(path.join(__dirname, "client", "build")))
 app.use(
   session({
     name: "tokendId",
-    secret: config.secret,
+    secret: process.env.SECRET,
     resave: false,
     saveUninitialized: true,
     cookie: {

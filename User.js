@@ -2,8 +2,6 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
 const jwt = require("jwt-simple");
 
-const config = require("./config/config");
-
 const userShema = new mongoose.Schema({
   firstname: { type: String, required: true },
   email: { type: String, lowercase: true, required: true, unique: true },
@@ -26,7 +24,7 @@ userShema.methods = {
       email: user.email
     };
 
-    return jwt.encode(payload, config.secret);
+    return jwt.encode(payload, process.env.SECRET);
   }
 };
 
