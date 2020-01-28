@@ -8,7 +8,9 @@
     "test:watch": "jest --watch",
     "start": "node index.js",
     "start:watch": "nodemon .",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    "heroku-postbuild": "npm run install:server && npm run install:client",
+    "install:server": "npm install",
+    "install:client": "cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
