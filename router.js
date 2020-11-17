@@ -106,7 +106,7 @@ exports.init = app => {
     }
   });
 
-  app.delete("/users/:id", async (req, res) => {
+  app.get("/users/:id", async (req, res) => {
     const userId = sanitize(req.params.id);
 
     if (!userId) {
@@ -118,7 +118,7 @@ exports.init = app => {
     try {
       await User.deleteOne({ _id: userId });
 
-      return res.status(200).redirect("/users");
+      return res.status(302).redirect("/users");
     } catch (error) {
       return res.status(500).send({ error });
     }
